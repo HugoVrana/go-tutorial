@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	nums := []int{2, 3, 4}
 	sum := 0
 	for _, num := range nums {
@@ -12,13 +13,13 @@ func main() {
 
 	for i, num := range nums {
 		if num == 3 {
-			fmt.Println("index : ", i)
+			fmt.Println("index:", i)
 		}
 	}
 
-	kvs := map[string]string{"a": "apple", "b": "bannana"}
+	kvs := map[string]string{"a": "apple", "b": "banana"}
 	for k, v := range kvs {
-		fmt.Printf("%s => %s", k, v)
+		fmt.Printf("%s -> %s\n", k, v)
 	}
 
 	for k := range kvs {
